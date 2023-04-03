@@ -1,0 +1,43 @@
+.app {
+    align-items: center;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+.centered-rectangular {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.centered-rectangular img {
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.canvas-root {
+    align-items: center;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: flex-start;
+    width: 100vw;
+}
+
+.myCanvas {
+    display: block;
+    height: 50vh;
+    margin: 10px auto;
+    max-width: auto;
+}
