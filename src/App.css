@@ -1,21 +1,10 @@
 .app {
-    /* align-items: center;    
-    display: flex;
-    flex-direction: column;
-    height: 40vh;
-    justify-content: flex-start;
-    width: 100vw; */
-
     align-items: center;
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* adjust the gap between the input box and the button */
     justify-content: center;
-
-
-
 }
 
 .centered-rectangular {
