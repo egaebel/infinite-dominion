@@ -7,10 +7,12 @@ const jsonKeysPrompt = "Output ONLY JSON using the keys: 'title', 'type', 'descr
 
 async function getCardText(cardPrompt: string): Promise<string> {
     if (cardPrompt === undefined) {
+        console.log("cardPrompt was undefined, setting to emptry string.....");
         cardPrompt = "";
     }
-    console.log("fetchText called with cardPrompt: '%s'", cardPrompt);
+    console.log("getCardText called with cardPrompt: '%s'", cardPrompt);
     let textPrompt = `Generate a new card, ${cardPrompt}, from the game Dominion. ${cardTextFormattingPrompt} ${lengthRestrictionPrompt} ${jsonKeysPrompt}`;
+    console.log(`Using full prompt: '${textPrompt}'`);
     const configuration = new Configuration({
         apiKey: process.env.REACT_APP_OPENAI_API_KEY,
     });
@@ -37,6 +39,7 @@ async function getCardText(cardPrompt: string): Promise<string> {
 
 export default async function cardText(request: VercelRequest,
     response: VercelResponse) {
+    console.log(`cardText called with cardPrompt: '${request.body.cardPrompt}' request.body: '${request.body}'`);
     let cardPrompt = "";
     try {
         cardPrompt = request.body.cardPrompt;

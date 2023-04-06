@@ -1102,6 +1102,7 @@ function initCardImageGenerator() {
                     setImageSource(id, dataURL)
                 }, maxWidth, maxHeight);
             } else {
+                console.log("setImageSource per normal");
                 setImageSource(id, url);
             }
         }

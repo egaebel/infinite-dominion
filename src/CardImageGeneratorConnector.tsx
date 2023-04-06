@@ -58,6 +58,7 @@ const CardImageGeneratorConnector: React.FC<CardImageGeneratorConnectorProps> = 
     return (
         <div style={{ display: "none" }} className="centered-rectangular">
             <img style={{ display: "none" }} id="card-image" src={imageUrl} alt={"card image"} />
+            {/* <img style={{ display: "none" }} id="card-image" src={imageUrl} alt={"card image"} /> */}
             <p style={{ display: "none" }}>{text}</p>
 
             {/* Invisible fields that are CURRENTLY USED for card-image-generator. */}
