@@ -5,6 +5,7 @@ async function getCardImage(imagePrompt: string): Promise<object> {
     if (imagePrompt === undefined) {
         imagePrompt = "";
     }
+    // TODO: Tweak settings like steps, sampler, etc.
     const modelInputs = {
         "endpoint": "txt2img",
         "params": {
